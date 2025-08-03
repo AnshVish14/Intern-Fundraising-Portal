@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "./Loginpage.css";
 
 function Loginpage() {
   const navigate = useNavigate();
@@ -11,13 +12,15 @@ function Loginpage() {
 
   return (
     <div className="container">
-      <h2>Intern Login</h2>
+      <h1 class="heading">Login</h1>
       <form onSubmit={handleLogin}>
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
+        <br></br>
         <button type="submit">Login</button>
       </form>
     </div>
+  
   );
 }
 

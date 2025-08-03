@@ -3,28 +3,32 @@
   max-width: 600px;
   margin: 40px auto;
   padding: 30px;
-  background-color: #f8f9fa;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
 }
 
 /* Headings */
 .container h2 {
-  font-size: 28px;
+  font-size: 30px;
   color: #222;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 500;
   margin-bottom: 10px;
+  border-bottom-style: groove;
+  border-bottom-right-radius: 15%;
+  border-bottom-style:5px solid #000000a6; ;
 }
 
 .container h3 {
-  font-size: 24px;
+  font-size: 25px;
   margin-top: 20px;
-  color: #0077ff;
+  font-weight: 600;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0e7ce9;
 }
 
 .container p {
-  font-size: 16px;
+  font-size: 20px;
+  color: #333;
+  line-height: 1.6;
   margin-bottom: 10px;
 }
 
@@ -35,10 +39,11 @@ strong {
 /* Rewards section */
 .rewards {
   margin-top: 30px;
+  width: 85%;
   padding: 15px;
-  background-color: #e0f7fa;
-  border-left: 6px solid #0077ff;
-  border-radius: 10px;
+  background-color: #d9eef3;
+  border-left: 8px solid #136acd;
+  border-radius: 20%;
 }
 
 .rewards h4 {
@@ -62,14 +67,26 @@ strong {
   display: inline-block;
   margin-top: 25px;
   padding: 10px 20px;
-  background-color: #0077ff;
   color: white;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.3s ease;
-}
+  background-color: #21303eb2;
+  }
 
 .leaderboard-btn:hover {
-  background-color: #005dc1;
+  animation:btn-leaderboard 1s ease-in-out;
+
+}
+
+@keyframes btn-leaderboard {
+  from{
+    color: white;
+    transform: scale(1);
+  }
+  to{
+    background-color: rgba(92, 133, 167, 0.793);
+    color: black;
+    transform: scale(1.2);
+  }
 }

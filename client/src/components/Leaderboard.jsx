@@ -14,9 +14,10 @@ function Leaderboard() {
 
   return (
     <div className="leaderboard-container">
-      <h2>🏆 Leaderboard</h2>
+       <h2>🏆 Leaderboard</h2>
       <table>
         <thead>
+           
           <tr>
             <th>Rank</th>
             <th>Intern Name</th>
