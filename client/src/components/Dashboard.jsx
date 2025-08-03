@@ -8,7 +8,7 @@ function Dashboard() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/intern") // Fetch intern data, not leaderboard here
+      .get("https://intern-fundraising-portal.onrender.com/api/intern") // Fetch intern data, not leaderboard here
       .then((res) => setIntern(res.data))
       .catch((err) => console.error(err));
   }, []);
