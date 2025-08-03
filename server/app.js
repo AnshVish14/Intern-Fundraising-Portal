@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;  // use environment port if available
 
 // Middleware
 app.use(cors());
@@ -32,7 +32,12 @@ app.get("/api/leaderboard", (req, res) => {
   });
 });
 
-// start the server to  run the backend
+// Root route for simple test
+app.get('/', (req, res) => {
+  res.send('Backend is working!');
+});
+
+// start the server to run the backend
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
