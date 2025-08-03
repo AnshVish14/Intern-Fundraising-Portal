@@ -32,7 +32,7 @@ app.get("/api/leaderboard", (req, res) => {
   });
 });
 
-// Start server
+// start the server to  run the backend
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
