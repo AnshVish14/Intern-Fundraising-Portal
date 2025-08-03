@@ -7,7 +7,7 @@ function Leaderboard() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/leaderboard")
+      .get("https://intern-fundraising-portal.onrender.com/api/leaderboard")
       .then((res) => setLeaders(res.data))
       .catch((err) => console.error(err));
   }, []);
