@@ -1,0 +1,75 @@
+/* General container styling */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Headings */
+.container h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.container h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #0077ff;
+}
+
+.container p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #444;
+}
+
+/* Rewards section */
+.rewards {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #e0f7fa;
+  border-left: 6px solid #0077ff;
+  border-radius: 10px;
+}
+
+.rewards h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0077ff;
+}
+
+.rewards ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.rewards li {
+  font-size: 16px;
+  padding: 6px 0;
+}
+
+/* Leaderboard button */
+.leaderboard-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 20px;
+  background-color: #0077ff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.leaderboard-btn:hover {
+  background-color: #005dc1;
+}
